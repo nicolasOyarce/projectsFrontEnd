@@ -1,0 +1,117 @@
+/* Variables */
+:root {
+    --main: #007cbf;
+    --second: #001675;
+    --white: #fff;
+    --black: #000;
+
+    --letter: "Roboto Condensed", sans-serif;
+}
+
+
+/* Golables */
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: var(--letter);
+}
+.container {
+    width: min(90%, 100rem);
+    margin: 0 auto;
+}
+
+
+/* Nav */
+.nav {
+    background-color: var(--main);
+
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav__link {
+    padding: 1.5rem;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+.nav__link:hover {
+    background-color: var(--second);
+}
+
+
+/* Body */
+.section {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.text {
+    font-size: 2rem;
+    padding: 2rem;
+    line-height: 2.8rem;
+    text-align: center;
+}
+.images {
+    display: flex;
+    justify-content: center;
+}
+.img {
+    width: 30rem;
+    padding: 2rem;
+}
+.img:hover {
+    width: 35rem;
+    transition: 2s;
+}
+
+/* Form */
+#form {
+    margin: 3rem auto 24.5rem auto;
+    border: 1px solid black;
+    border-radius: 30px 0;
+    padding: 2rem;
+    width: 50rem;
+    height: 30rem;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.title-contact {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.label {
+    display: inline-block;
+    width:20rem;
+    text-align: right;
+    padding-right: 1rem;
+    font-size: 2rem;
+    margin-bottom: 1.3rem;
+}
+.centrar {
+    text-align: center;
+}
+.button {
+    border: none;
+    color: var(--white);
+    background-color: var(--main);
+    padding: 1rem;
+}
+.button:hover {
+    cursor: pointer;
+    background-color: var(--second);
+}
+
+
+/* Footer */
+.footer {
+    background-color: var(--main);
+}
+.footer__p {
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.8rem;
+}
